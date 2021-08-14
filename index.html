@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> MS Word TryOut </title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "main.js"> </script>
+    </head>
+    <body id = "bacgcolor">
+        <div class = "Title_bar">
+            <br>
+            <span>
+            <p class = "p1"> WORD </p>
+            <h4 id = "document_name_label"> Document 1 </h4>
+            </span>
+            <span> 
+            <input type = "text" placeholder = "Document name" id = "document_name" width = 30%>
+            <button onclick = "savename()" id = "button_savename"> Save document name </button>
+            <img src = "Save icon.png" id = "saveicon">
+            </span>
+            <br>
+        </div>
+        <br>
+        <div id = "settings">
+        <br>
+        <span> <button onclick = "bold()" id = "bold_button"> B </button> </span>
+        <span> <button onclick = "italics()" id = "italics_button"> I </button> </span>
+        <span> <button onclick = "underline()" id = "underline_button"> U </button> </span>
+        <span> <button onclick = "uppercase_word()" id = "uppercase_button"> a > A </button> </span>
+        <span> <button onclick = "lowercase_word()" id = "lowercase_button"> A > a </button> </span>
+        <span> <button ondblclick = "delete_all()" id = "delete_all_button"> Delete All </button> </span>
+        <span> <img src = "Delete icon.png" id = "delete_icon"> </span>
+        <span> <p id = "p1"> Delete button only works on double click for unintentional clicks </p> </span>
+        <hr>
+        <span> <input type = "text" placeholder = "Enter Font Family" id = "font_family_input"> </span>
+        <span> <input type = "number" placeholder = "Enter font size" id = "font_size_input"> </span>
+        <span> <input type = "text" placeholder = "Enter font color" id = "font_color_input"> </span>
+        <button onclick = "add_font_family()" id = "add_fontfamily"> Save font family </button>
+        <img src = "Font Family icon.png" id = "fficon">
+        <button onclick = "add_font_size()" id = "add_fontsize"> Save font size </button>
+        <img src = "Font Size icon.png" id = "fsicon">
+        <button onclick = "add_font_color()" id = "add_fontcolor"> Save font color </button>
+        <img src = "Font color icon.jpg" id = "fcicon">
+        <hr>
+        <input type = "text" placeholder = "Background color" id = "bgcolor_save_text"> 
+        <button onclick = "backgroundcolor_save()" id = "bgcolor_save"> Save background color </button>
+        <img src = "BGcolor icon.png" id = "bgcicon">
+        <input type = "number" placeholder = "Enter letter spacing" id = "enter_spaceingL">
+        <button onclick = "letterspacing()" id = "letterS"> Save letter spacing </button>
+        <img src = "Letter spacing icon.png" id = "lsicon">
+        <hr>
+        <button onclick = "replace()" id = "replace_button"> Replace word </button>
+        <img src = "Replace icon.png" id = "replaceicon">
+        <input type = "text" placeholder = "Word to replace" id = "word1">
+        <input type = "text" placeholder = "Enter output word" id = "word2">
+        <hr>
+        <button onclick = "find()" id = "find_button"> Find word </button>
+        <img src = "Find icon.png" id = "findicon">
+        <input type = "text" placeholder = "The word" id = "find_text">
+        <hr>
+        <input type = "number" placeholder = "Enter Top margin" id = "tm">
+        <input type = "number" placeholder = "Enter Bottom margin" id = "bm">
+        <input type = "number" placeholder = "Enter Left margin" id = "lm">
+        <input type = "number" placeholder = "Enter Right margin" id = "rm">
+        <button onclick = "save_margins()" id = "button_savemargin"> Save all margins </button>
+        <img src = "Margins icon.png" id = "micon">
+        <hr>
+        <button onclick = "text_tospeech()" id = "textspeech"> Text to Speech </button>
+        <img src = "Text to speech icon.jfif" id = "t2sicon">
+        <button onclick = "voicetype()" id = "voice_type"> Voice Type </button>
+        <img src = "Voice icon.png" id = "voiceicon">
+        <hr>
+        <br>
+        </div>
+        <hr>
+        <textarea id = "write_area"> </textarea>
+    </body>
+</html>
